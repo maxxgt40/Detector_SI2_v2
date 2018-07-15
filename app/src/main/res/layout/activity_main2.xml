@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/limiteV"
+                android:text="Limites de velocidad:" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/boton30kph"
+                android:src="@drawable/lv30kph"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/limiteV"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/boton40kph"
+                android:src="@drawable/lv40kph"
+                android:layout_toEndOf="@id/boton30kph"
+                android:layout_below="@id/limiteV"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/boton60kph"
+                android:src="@drawable/lv60kph"
+                android:layout_toEndOf="@id/boton40kph"
+                android:layout_below="@id/limiteV"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/boton80kph"
+                android:src="@drawable/lv80kph"
+                android:layout_toEndOf="@id/boton60kph"
+                android:layout_below="@id/limiteV"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/boton100kph"
+                android:src="@drawable/lv100kph"
+                android:layout_toEndOf="@id/boton80kph"
+                android:layout_below="@id/limiteV"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewUno"
+                android:layout_centerHorizontal="true"
+                android:foregroundGravity="top|right"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicacion/Velocidad: "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/mostrarUbiVelo"
+                    />
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/fuerzaGde"
+                android:text="Fuerza G de:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fuerzaGde"
+                android:id="@+id/aceleracion"
+                android:textSize="20sp"
+                android:text="Aceleracion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/aceleracion"
+                android:id="@+id/frenado"
+                android:textSize="20sp"
+                android:text="Frenado" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/frenado"
+                android:id="@+id/cambioCarril"
+                android:textSize="20sp"
+                android:text="Cambio carril" />
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/botonRegresar"
+                android:src="@drawable/arrow_back"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
